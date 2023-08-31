@@ -9,3 +9,7 @@ module "acm_request_certificate" {
     each.value.tags
   )
 }
+
+output "requested_certificates" {
+  value = module.acm_request_certificate
+}
